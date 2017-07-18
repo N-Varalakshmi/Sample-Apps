@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let userView = UIImageView.init(frame:CGRect.init(x: 150, y: 50, width: 100, height: 100))
         userView.image = UIImage.init(named:"Monkey")
         userView.backgroundColor = UIColor.blue
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func GenerateFood(_ sender: AnyObject) {
-    
+        
         if  (sender as? UIButton)?.title(for: UIControlState.normal) == "Reset Game" {
             userImgView?.image = UIImage.init(named:"Monkey")
             chooseFood.setTitle(nil, for: UIControlState.normal)
